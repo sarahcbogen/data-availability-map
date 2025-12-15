@@ -4,7 +4,7 @@ This application was designed to visualize the spatial and temporal coverage of 
 
 ## Live App
 
-A deployed version of this app is available [here](https://sarahcbogen.shinyapps.io/data-availability-map/).
+A deployed version of this app with the demo data set is available [here](https://sarahcbogen.shinyapps.io/data-availability-map/).
 
 ## Repository Structure
 
@@ -17,7 +17,7 @@ A deployed version of this app is available [here](https://sarahcbogen.shinyapps
 └── DESCRIPTION         # Optional: package-style metadata
 
 ### Requirements
-- R version >= X.X.X
+- R version >= 4.0.0
 - RStudio (optional)
 
 ### Install required packages
