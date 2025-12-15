@@ -17,7 +17,7 @@ Key features:
 
 A deployed version of this app is available at:
 
-[Insert shinyapps.io or Posit Connect link here]
+[[Insert shinyapps.io or Posit Connect link here](https://sarahcbogen.shinyapps.io/data-availability-map/)]
 
 Remove this section if the app is not deployed.
 
@@ -57,9 +57,6 @@ cd REPOSITORY
 Launch the app in R:
 
 shiny::runApp()
-
-If the app is structured as an R package:
-
 mypackage::run_app()
 
 ## Data
@@ -82,17 +79,3 @@ Provide instructions for how users should interact with the application. Example
 
 Replace the steps with your actual workflow.
 
-## License
-
-This project is licensed under the [License Name].
-See the LICENSE file for details.
-
-## Acknowledgments
-
-List contributors, package authors, or any resources that inspired the project.
-
-## Issues / Support
-
-To report bugs or request features, please open an issue at:
-
-https://github.com/USERNAME/REPOSITORY/issues
