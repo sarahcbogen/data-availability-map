@@ -62,7 +62,7 @@ make_avail_plot <- function(siteID, data_long, full_info){
                              all.x = TRUE)
   df_monthly_counts$count[is.na(df_monthly_counts$count)] <- 0
   
-  plot_template %+% df_monthly_counts +
+  plot_template + df_monthly_counts +
     ggtitle(toupper(siteID))
 }
 
@@ -188,12 +188,12 @@ server <- function(input, output, session) {
     }
     
     # Determine datasets and datatypes
-    focal_datatypes <- unique(data$datatype)
-    focal_datasets  <- unique(data$dataset_id)
+    focal_datatypes <- input$paramChoice
+    focal_datasets  <- input$datasetFilter
     
     # Determine date range
-    begin <- '2021-12-01'
-    end <- '2023-12-01'
+    begin <- input$dateRange[1]
+    end <- input$dateRange[2]
     
     # Build full date sequence
     date_seq <- seq(
