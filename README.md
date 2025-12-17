@@ -1,25 +1,10 @@
-## Shiny App Title
+## South Florida WQ Data Coverage Map
 
-A brief description of what this Shiny application does. Replace this with a short summary of the purpose and key functionality.
-
-### Overview
-
-This repository contains the source code for "Shiny App Title", an R Shiny application designed to [describe the problem the app solves]. Users can explore [feature 1], visualize [feature 2], and interact with [feature 3] through an intuitive web interface.
-
-Key features:
-- Feature 1 (replace text)
-- Feature 2 (replace text)
-- Feature 3 (replace text)
-
-(Optional) Insert a screenshot or GIF here.
+This application was designed to visualize the spatial and temporal coverage of water quality data in South Florida to assess dataset completeness and inform research questions.
 
 ## Live App
 
-A deployed version of this app is available at:
-
-[Insert shinyapps.io or Posit Connect link here]
-
-Remove this section if the app is not deployed.
+A deployed version of this app with the demo data set is available [here](https://sarahcbogen.shinyapps.io/data-availability-map/).
 
 ## Repository Structure
 
@@ -32,20 +17,20 @@ Remove this section if the app is not deployed.
 └── DESCRIPTION         # Optional: package-style metadata
 
 ### Requirements
-- R version >= X.X.X
+- R version >= 4.0.0
 - RStudio (optional)
 
 ### Install required packages
 
 install.packages(c(
   "shiny",
-  "tidyverse",
-  "plotly",
-  "DT",
-  "shinythemes"
+  "leaflet",
+  "dplyr",
+  "ggplot2",
+  "shinythemes",
+  "lubridate",
+  "tidyr"
 ))
-
-(Replace packages with your actual dependencies.)
 
 ## Running the App Locally
 
@@ -57,42 +42,11 @@ cd REPOSITORY
 Launch the app in R:
 
 shiny::runApp()
-
-If the app is structured as an R package:
-
 mypackage::run_app()
 
 ## Data
 
-Describe any datasets used by the application.
-
-- dataset.csv: description, column meanings, source, license.
-- Additional datasets if applicable.
-
-Remove or update this section as needed.
 
 ## Usage
 
-Provide instructions for how users should interact with the application. Example:
 
-1. Upload a file
-2. Adjust settings
-3. View results
-4. Download outputs
-
-Replace the steps with your actual workflow.
-
-## License
-
-This project is licensed under the [License Name].
-See the LICENSE file for details.
-
-## Acknowledgments
-
-List contributors, package authors, or any resources that inspired the project.
-
-## Issues / Support
-
-To report bugs or request features, please open an issue at:
-
-https://github.com/USERNAME/REPOSITORY/issues
