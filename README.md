@@ -1,52 +1,35 @@
-## South Florida WQ Data Coverage Map
+## South Florida Data Availability Map
 
 This application was designed to visualize the spatial and temporal coverage of water quality data in South Florida to assess dataset completeness and inform research questions.
 
-## Live App
 
-A deployed version of this app with the demo data set is available [here](https://sarahcbogen.shinyapps.io/data-availability-map/).
+### Repository Structure
 
-## Repository Structure
-
-.
+```plaintext
 ├── app.R               # Main Shiny application file (or ui.R + server.R)
-├── R/                  # Additional R scripts or modules
 ├── data/               # Data used by the application
+│   └── demo_data.csv   # Example dataset for demonstration
 ├── www/                # Static assets (CSS, JS, images)
-├── README.md           # Project documentation
-└── DESCRIPTION         # Optional: package-style metadata
+└── README.md           # Project documentation
+```
 
-### Requirements
+
+### Software Requirements
 - R version >= 4.0.0
 - RStudio (optional)
 
-### Install required packages
-
-install.packages(c(
-  "shiny",
-  "leaflet",
-  "dplyr",
-  "ggplot2",
-  "shinythemes",
-  "lubridate",
-  "tidyr"
-))
-
-## Running the App Locally
-
-Clone the repository:
-
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
-
-Launch the app in R:
-
-shiny::runApp()
-mypackage::run_app()
-
-## Data
+```r
+install.packages(c("shiny", "leaflet", "dplyr", "ggplot2", "shinythemes", "lubridate", "tidyr"))
+```
 
 
-## Usage
+
+
+### Data
+
+
+### Live App
+
+A deployed version of this app with the demo data set is available [here](https://sarahcbogen.shinyapps.io/data-availability-map/).
 
 
