@@ -1,8 +1,8 @@
 # South Florida Data Availability Map
 
-This application was designed to visualize the spatial and temporal availability of water quality data in South Florida. Users select a generalized spatial area (Biscayne Bay or South Florida), a date range of interest, and datasets and parameters of interest. The application shows spatial data availability by mapping the sites that have any data availability. Users can explore temporal data availability by clicking individual sites, revealing popup bar charts showing the number of measurements by month and parameter.
+This application was designed to visualize the spatial and temporal availability of water quality data in South Florida. Users select a generalized spatial area (Biscayne Bay or South Florida), a date range of interest, source datasets of interest, and water quality parameters of interest. The application shows spatial data availability by mapping the sites that have any data availability. Users can explore temporal data availability by clicking individual sites, revealing popup bar charts showing the number of measurements by month and parameter.
 
-The application has relatively lightweight data requirements and may be used to assess dataset completeness, guide research questions, and inform more targeted and detailed queries of the source data sets.
+The application has relatively lightweight data requirements and may be used to assess dataset completeness, guide research questions, and inform more detailed queries of the source data sets.
 
 ## Project Directory Structure
 
