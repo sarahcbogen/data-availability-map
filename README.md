@@ -40,7 +40,7 @@ The application requires a monthly summary data file stored in the **data/** sub
 - **Month**: Stored as a character string in the format 'yyyy-mm-01'
 - **count**: Number of measurements for the given site_id, datatype, and Month
 
-The demo dataset (demo_data.csv) is provided in this repository as a generalized working example. The path and file name of the data file used by the application can be changed in the second section of **app.R**.
+A demo dataset (demo_data.csv) is provided in this repository as a generalized working example. The path and file name of the data file used by the application can be changed in the second section of **app.R**.
 
 ## Live App
 
