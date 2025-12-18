@@ -30,7 +30,7 @@ install.packages(c("shiny", "leaflet", "dplyr", "ggplot2", "lubridate", "tidyr")
 
 ### Data
 
-The application requires a monthly summary data file stored in the **data/** subdirectory. The required column structure of the data file is described below. The application coerces scanned-in data to the expected R data format (character, numeric, integer, date). The application does not currently provide other data format checking or quality assurance features and assumes no NA values.
+The application requires a monthly summary data file stored in the **data/** subdirectory. The required column structure of the data file is described below. The application coerces scanned-in data to the expected R data format (character, numeric, integer, date). However, the application does not currently provide other data format checking or quality assurance features and assumes no NA values.
 
 - **site_id**: Identifier for the sampling site
 - **dataset_id**: The original data source . ***Unique values from this column populate the "Select Dataset(s):" options on the user interface***
