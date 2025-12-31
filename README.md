@@ -1,8 +1,10 @@
 # South Florida Data Availability Map
 
-This application was designed to visualize the spatial and temporal availability of water quality data in South Florida. Users select a generalized spatial area (Biscayne Bay or South Florida), a date range of interest, source datasets of interest, and water quality parameters of interest. The application shows spatial data availability by mapping the sites that have any data availability. Users can explore temporal data availability by clicking individual sites, revealing popup bar charts showing the number of measurements by month and parameter.
+This application visualizes the spatial and temporal availability of water quality data in South Florida. Users can select a region (Biscayne Bay or South Florida), a date range, data sources, and water quality parameters of interest.
 
-The application has relatively lightweight data requirements and may be used to assess dataset completeness, guide research questions, and inform more detailed queries of the source data sets.
+Spatial data availability is displayed by mapping monitoring sites with available data. Temporal availability can be explored by clicking on individual sites, which opens popup bar charts showing the number of measurements by month and parameter.
+
+The application has lightweight data requirements and is intended to help users assess dataset completeness, refine research questions, and guide more detailed queries of the source datasets.
 
 ## Project Directory Structure
 
@@ -30,7 +32,7 @@ install.packages(c("shiny", "leaflet", "dplyr", "ggplot2", "lubridate", "tidyr")
 
 ### Data
 
-The application requires a monthly summary data file stored in the **data/** subdirectory. The required column structure of the data file is described below. The application coerces scanned-in data to the expected R data format (character, numeric, integer, date). However, the application does not currently provide other data format checking or quality assurance features and assumes no NA values.
+The application expects a monthly summary data file in the data/ subdirectory with the column structure described below. Basic type coercion is applied to match expected R data types (character, numeric, integer, date). No additional data validation or quality assurance is performed, and NA values are not explicitly handled.
 
 - **site_id**: Identifier for the sampling site
 - **dataset_id**: The original data source . ***Unique values from this column populate the "Select Dataset(s):" options on the user interface***
@@ -40,7 +42,7 @@ The application requires a monthly summary data file stored in the **data/** sub
 - **Month**: Stored as a character string in the format 'yyyy-mm-01'
 - **count**: Number of measurements for the given site_id, datatype, and Month
 
-A demo dataset (demo_data.csv) is provided in this repository as a generalized working example. The path and file name of the data file used by the application can be changed in the second section of **app.R**.
+A demo dataset (demo_data.csv) is included with this repository to show a generalized working example. The path and file name of the data file can be changed in the second section of **app.R**.
 
 ## Live App
 
